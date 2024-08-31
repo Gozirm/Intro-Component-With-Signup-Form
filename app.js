@@ -18,10 +18,12 @@ function getName(e) {
     let InputIcon1  = 'assets/icon-error.svg';
     if(FirstIcon.value === ""){
         console.log("EMpty");
+        document.getElementsByTagName('input')[0].style.borderColor = 'red';
         img.setAttribute("src",InputIcon1);
         `${ErroFirst.innerHTML ="First Name Can Not be empty"}`
     }else{
         console.log("Not EMpty");
+        document.getElementsByTagName('input')[0].style.borderColor = '';
         img.setAttribute("src", "");
         `${ErroFirst.textContent = ""}`
     }
@@ -33,10 +35,12 @@ function getName1(e) {
     let InputIcon2 = "assets/icon-error.svg";
     if(LastIcon.value === ""){
         console.log("EMpty");
+                document.getElementsByTagName('input')[1].style.borderColor = 'red';
         Aimg.setAttribute("src", InputIcon2);
         `${ErroLast.innerHTML ="Last Name Can Not be empty"}`
     }else{
         console.log("Not EMpty");
+                document.getElementsByTagName('input')[1].style.borderColor = '';
         Aimg.setAttribute("src", "");
         `${ErroLast.textContent = ""}`
         
@@ -49,10 +53,12 @@ function getName2(e) {
     let InputIcon3 = "assets/icon-error.svg";
     if(EmailIcon.value === ""){
         console.log("EMpty");
+                document.getElementsByTagName('input')[2].style.borderColor = 'red';
         Eimg.setAttribute("src", InputIcon3);
         `${ErroEmail.innerHTML ="Email Can Not be empty"}`
     }else{
         console.log("Not EMpty");
+                document.getElementsByTagName('input')[2].style.borderColor = '';
         Eimg.setAttribute("src", "");
         `${ErroEmail.textContent = ""}`
         
@@ -65,10 +71,12 @@ function getName3(e) {
     let InputIcon4 = "assets/icon-error.svg";
     if(PasswordIcon.value === ""){
         console.log("EMpty");
+                document.getElementsByTagName('input')[3].style.borderColor = 'red';
         PImg.setAttribute("src", InputIcon4);
         `${ErroPassword.innerHTML ="Password Can Not be empty"}`
     }else{
         console.log("Not EMpty");
+                document.getElementsByTagName('input')[3].style.borderColor = '';
         PImg.setAttribute("src", "");
         `${ErroPassword.textContent = ""}`
         

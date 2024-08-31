@@ -11,10 +11,23 @@ body {
   background-image: url(assets/bg-intro-mobile.png);
   background-color: var(--Red);
   font-family: var(--ff);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.size {
+section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem 0;
+
+}
+input {
   font-weight: 700;
-  border: 1px solid var(--Dark-Blue);
+  border: 1.5px solid;
   border-radius: 5px;
 }
 .form {
@@ -86,17 +99,30 @@ img{
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 769px) {
+  body{
+    background-image: url(assets/bg-intro-desktop.png);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   section {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    /* padding: 20rem 0; */
   }
   .text-center-sm {
     text-align: left;
   }
   .bold-h2 {
     width: 80%;
+    /* margin-top: 100rem; */
   }
   .width-try {
     width: 100%;
